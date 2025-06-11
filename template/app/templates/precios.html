@@ -1,0 +1,345 @@
+{% load static %} 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes Menú Digital con QR - Experiencia Premium</title>
+     <!-- Cargar CSS -->
+    <link rel="stylesheet" href="{% static 'app/css/style.css' %}">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Planes de Menú Digital con QR (Dule_developer)</h1>
+            <p>Transforma tu restaurante con tecnología de vanguardia</p>
+        </div>
+
+        <div class="plans-grid">
+            <!-- Plan Básico -->
+            <div class="plan-card basic">
+                <div class="plan-header">
+                    <span class="plan-icon">🟢</span>
+                    <h3 class="plan-name">Básico</h3>
+                    <p class="plan-subtitle">Ideal para empezar</p>
+                </div>
+                
+                <div class="pricing">
+                    <div class="price-box">
+                        <div class="price-label">Desarrollo</div>
+                        <div class="price-value">$50</div>
+                        <div class="price-note">Pago único</div>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-label">Soporte</div>
+                        <div class="price-value">$9</div>
+                        <div class="price-note">Mensual (opcional)</div>
+                    </div>
+                </div>
+
+                <ul class="features">
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">Menú digital PDF o HTML simple</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">Generador de QR estático</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">1 actualización mensual</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Plan Estándar -->
+            <div class="plan-card standard">
+                <div class="plan-header">
+                    <span class="plan-icon">🔵</span>
+                    <h3 class="plan-name">Estándar</h3>
+                    <p class="plan-subtitle">Más funcionalidades</p>
+                </div>
+                
+                <div class="pricing">
+                    <div class="price-box">
+                        <div class="price-label">Desarrollo</div>
+                        <div class="price-value">$120</div>
+                        <div class="price-note">Pago único</div>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-label">Soporte</div>
+                        <div class="price-value">$10</div>
+                        <div class="price-note">Mensual (opcional)</div>
+                    </div>
+                </div>
+
+                <ul class="features">
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">Menú HTML interactivo con imágenes</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">QR dinámico y personalizable</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">Hasta 10 cambios/mes</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Plan Pro -->
+            <div class="plan-card pro">
+                <div class="plan-header">
+                    <span class="plan-icon">🟣</span>
+                    <h3 class="plan-name">Pro</h3>
+                    <p class="plan-subtitle">Para profesionales</p>
+                </div>
+                
+                <div class="pricing">
+                    <div class="price-box">
+                        <div class="price-label">Desarrollo</div>
+                        <div class="price-value">$220</div>
+                        <div class="price-note">Pago único</div>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-label">Soporte</div>
+                        <div class="price-value">$15</div>
+                        <div class="price-note">Mensual</div>
+                    </div>
+                </div>
+
+                <ul class="features">
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">Menú responsivo multiidioma</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">Panel editable por el cliente</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">Estadísticas de escaneos</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">Hosting incluido</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Plan Premium -->
+            <div class="plan-card premium">
+                <div class="plan-header">
+                    <span class="plan-icon">🔴</span>
+                    <h3 class="plan-name">Premium</h3>
+                    <p class="plan-subtitle">Máximo rendimiento</p>
+                </div>
+                
+                <div class="pricing">
+                    <div class="price-box">
+                        <div class="price-label">Desarrollo</div>
+                        <div class="price-value">$350-500</div>
+                        <div class="price-note">Pago único</div>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-label">Soporte</div>
+                        <div class="price-value">$20</div>
+                        <div class="price-note">Mensual</div>
+                    </div>
+                </div>
+
+                <ul class="features">
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">Menú con carrito, pedidos y pagos</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">Multiplataforma</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">Soporte 24/7</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text">Integración con impresora o sistema POS</span>
+                    </li>
+                </ul>
+
+                <button class="cta-button">Elegir Plan</button>
+            </div>
+
+            <!-- Pack Restaurante Inteligente -->
+            <div class="plan-card restaurant">
+                <div class="plan-header">
+                    <span class="plan-icon">🤖</span>
+                    <h3 class="plan-name">Pack Restaurante Inteligente</h3>
+                    <p class="plan-subtitle">
+                        <span class="badge badge-new">NUEVO</span>
+                        <span class="badge badge-popular">POPULAR</span>
+                    </p>
+                </div>
+                
+                <div class="pricing">
+                    <div class="price-box">
+                        <div class="price-label">Desarrollo</div>
+                        <div class="price-value">$800</div>
+                        <div class="price-note">Pago único</div>
+                    </div>
+                    <div class="price-box">
+                        <div class="price-label">Soporte</div>
+                        <div class="price-value">$20</div>
+                        <div class="price-note">Mensual</div>
+                    </div>
+                </div>
+
+                <div class="highlight-box">
+                    <h4>Solución Completa Todo-en-Uno</h4>
+                    <p>Menú Digital + Bot WhatsApp + Soporte Premium</p>
+                </div>
+
+                <ul class="features">
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text"><strong>Menú digital editable</strong><br>
+                        Desarrollo web personalizado o sistema autogestionable</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text"><strong>Multiplataforma</strong><br>
+                        Móvil/tablet/PC con diseño profesional</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text"><strong>Hosting incluido</strong><br>
+                        Servidor optimizado y dominio personalizado</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text"><strong>Código QR dinámico</strong><br>
+                        Actualización sin cambiar el QR físico</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text"><strong>Bot WhatsApp automatizado</strong><br>
+                        Ver menú → Hacer pedido → Consultar estado</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text"><strong>Integración WhatsApp Business</strong><br>
+                        API Twilio, WATI o Chat-API incluida</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text"><strong>Respuestas automáticas</strong><br>
+                        Comandos útiles y flujo inteligente</span>
+                    </li>
+                    <li class="feature-item">
+                        <span class="feature-icon"></span>
+                        <span class="feature-text"><strong>Soporte premium 30 días</strong><br>
+                        Configuración, capacitación y ajustes incluidos</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="comparison-table">
+            <h3>Comparación Detallada de Planes</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>Básico</th>
+                            <th>Estándar</th>
+                            <th>Pro</th>
+                            <th>Premium</th>
+                            <th>Pack Inteligente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Menú Digital</strong></td>
+                            <td>PDF/HTML simple</td>
+                            <td>HTML con imágenes</td>
+                            <td>Responsivo multiidioma</td>
+                            <td>Con carrito y pagos</td>
+                            <td>✅ Editable + Profesional</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Código QR</strong></td>
+                            <td>Estático</td>
+                            <td>Dinámico</td>
+                            <td>Dinámico + Stats</td>
+                            <td>Dinámico + Analytics</td>
+                            <td>✅ Dinámico Avanzado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Panel de Control</strong></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                            <td>✅ Autogestionable</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hosting Incluido</strong></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                            <td><span class="check-icon">✓</span></td>
+                            <td>✅ Premium</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Bot WhatsApp</strong></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td>✅ Automatizado Completo</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Integración API</strong></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td><span class="cross-icon">✗</span></td>
+                            <td>POS/Impresora</td>
+                            <td>✅ WhatsApp Business</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Soporte</strong></td>
+                            <td>Email (opcional)</td>
+                            <td>Email (opcional)</td>
+                            <td>Email + Chat</td>
+                            <td>24/7</td>
+                            <td>✅ 30 días Premium</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Actualizaciones/mes</strong></td>
+                            <td>1</td>
+                            <td>10</td>
+                            <td>Ilimitadas</td>
+                            <td>Ilimitadas</td>
+                            <td>✅ Ilimitadas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p> ¿Necesitas algo personalizado? Contáctanos para una cotización a medida</p>
+            <p> WhatsApp: +507 | </p>
+        </div>
+    </div>
+    <script src="{% static 'app/js/script.js' %}"></script>
+</body>
+</html>

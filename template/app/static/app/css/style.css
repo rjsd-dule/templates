@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInDown 1s ease;
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  animation: fadeInUp 1s ease 0.3s both;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.plan-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.8s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.plan-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--plan-color);
+}
+
+.plan-card.basic {
+  --plan-color: linear-gradient(135deg, #4caf50, #45a049);
+}
+
+.plan-card.standard {
+  --plan-color: linear-gradient(135deg, #2196f3, #1976d2);
+}
+
+.plan-card.pro {
+  --plan-color: linear-gradient(135deg, #9c27b0, #7b1fa2);
+}
+
+.plan-card.premium {
+  --plan-color: linear-gradient(135deg, #f44336, #d32f2f);
+}
+
+.plan-card.restaurant {
+  --plan-color: linear-gradient(135deg, #ff9800, #f57c00);
+  border: 2px solid #ff9800;
+  position: relative;
+}
+
+.plan-card.restaurant::after {
+  content: "🔥 POPULAR";
+  position: absolute;
+  top: 15px;
+  right: -30px;
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: white;
+  padding: 5px 40px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transform: rotate(45deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.plan-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.plan-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  background: var(--plan-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.plan-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.price-box {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+  border-radius: 12px;
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.price-box:hover {
+  border-color: var(--plan-color);
+  transform: scale(1.02);
+}
+
+.price-label {
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.price-value {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.price-note {
+  font-size: 0.7rem;
+  color: #999;
+  margin-top: 3px;
+}
+
+.features {
+  list-style: none;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.feature-item:hover {
+  background-color: #f8f9fa;
+}
+
+.feature-icon {
+  margin-right: 10px;
+  font-size: 1.1rem;
+  margin-top: 2px;
+}
+
+.feature-text {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.cta-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: var(--plan-color);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.comparison-table {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+  overflow-x: auto;
+}
+
+.comparison-table h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+}
+
+th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+tr:hover {
+  background-color: #f8f9fa;
+}
+
+.check-icon {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.cross-icon {
+  color: #f44336;
+  font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  opacity: 0.8;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .plan-card {
+    padding: 20px;
+  }
+
+  .pricing {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .comparison-table {
+    padding: 15px;
+  }
+}
+
+.highlight-box {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(255, 152, 0, 0.3);
+}
+
+.highlight-box h4 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 2px;
+}
+
+.badge-new {
+  background: #4caf50;
+  color: white;
+}
+
+.badge-popular {
+  background: #ff9800;
+  color: white;
+}
+
+.badge-premium {
+  background: #9c27b0;
+  color: white;
+}

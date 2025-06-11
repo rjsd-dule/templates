@@ -1,0 +1,37 @@
+# Entorno virtual
+venv/
+.env
+*.env
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+
+# Archivos de configuración local
+*.sqlite3
+db.sqlite3
+
+# Archivos de logs
+*.log
+
+# Archivos generados
+build/
+dist/
+*.egg-info/
+*.eggs/
+
+# Static y media en producción (puedes versionarlos si quieres)
+staticfiles/
+media/
+
+# Archivos de VSCode / PyCharm
+.vscode/
+.idea/
+
+# Docker
+*.pid
+*.tar
+*.sock
+docker-compose.override.yml
+.env.docker

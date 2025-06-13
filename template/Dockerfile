@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copia el código del proyecto
 COPY . .
 
-#RUN python manage.py collectstatic --noinput
+RUN python manage.py collectstatic --noinput
 
 # Expone el puerto
 EXPOSE 8000
